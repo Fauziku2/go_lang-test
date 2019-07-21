@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/Fauziku2/go_lang-test/dog"
 )
 
 type canine struct {
@@ -12,7 +14,7 @@ type canine struct {
 func main() {
 	fido := canine{
 		name: "Fido",
-		age:  10,
+		age:  dog.Years(10),
 	}
 
 	fmt.Println(fido)
